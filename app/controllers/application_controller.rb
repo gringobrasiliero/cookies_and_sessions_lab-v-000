@@ -6,7 +6,7 @@ helper_method :cart
 
 
 def cart
-session[:cart] || []
+session[:cart] ||= []
 end
 
 
