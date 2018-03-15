@@ -1,8 +1,8 @@
 class ProductsController < ApplicationController
 
 def add
-@product = Products.find(params[:id])
-cart << @product.id
+
+cart << params[:product]
 redirect_to '/products/index'
 end
 
